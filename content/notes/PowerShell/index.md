@@ -7,6 +7,7 @@ menu:
     identifier: notes-powershell
     parent: Powershell
     weight: 10
+mermaid: true
 ---
 
 <!-- Variable -->
