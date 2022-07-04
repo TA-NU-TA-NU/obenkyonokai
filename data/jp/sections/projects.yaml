@@ -1,0 +1,85 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: PowerShell
+  filter: "PowerShell"
+- name: Windows10
+  filter: "Windows10"
+- name: 自動化
+  filter: "自動化"
+- name: Java
+  filter: "Java"
+- name: VBA
+  filter: "VBA"
+- name: Struts1.x
+  filter: "Struts1.x"
+- name: SQL
+  filter: "SQL"
+- name: oracleDB
+  filter: "oracleDB"
+- name: bat
+  filter: "bat"
+- name: VBS
+  filter: "VBS"
+- name: pester
+  filter: "pester"
+- name: Access
+  filter: "Access"
+- name: PowerQuery
+  filter: "PowerQuery"
+
+# your projects
+projects:
+- name: クライアントPCの自動構築ツールの開発
+  #logo: /images/sections/projects/kubernetes.png
+  role: 開発,テスト
+  timeline: "July 2018 - Present"
+  #repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: お客様先のWindows10化に伴う自動構築ツールの更改のお手伝いとして一部モジュール作成をいたしました。
+  tags: ["PowerShell", "Windows10", "自動化","bat","VBS"]
+
+- name: 社内PC資産管理イントラサイトへの情報登録・スクレイピングツールの開発
+  #logo: /images/sections/projects/tensorflow.png
+  role: 設計,開発,テスト,運用,保守
+  timeline: "Jun 2018 - Present"
+  #repo: https://github.com/tensorflow/tensorflow
+  #url: ""
+  summary: 社内PC資産管理イントラサイトへの入力支援と証跡保管のため登録結果をスクレイピングするツールをVBAで作成し作業効率を8.3倍にしメンバーが他の業務に集中できるように貢献しました
+  tags: ["VBA", "自動化"]
+
+- name: 社内PC資産管理イントラサイト追加改修
+  #logo: /images/sections/projects/toha.png
+  role: 設計,開発,テスト,運用,保守
+  timeline: "Jun 2019 - Present"
+  #repo: https://github.com/hossainemruz/toha
+  summary: 初めてのWebシステムの改修案件で、レガシーなWebアプリケーションであり、保守運用資料も乏しい状況のため現状の解析や言語やWebシステムの学習に苦慮しましたが要望通りの追加改修に成功することができました。
+  tags: ["Java","Struts1.x","SQL","oracleDB","bat","VBS"]
+
+- name: 社内PC資産管理イントラサイトシステムへの他サーバーperlバッチ移植案件
+  #logo: /images/sections/projects/toha.png
+  role: 設計,開発,テスト,運用,保守
+  timeline: "Jun 2019 - Present"
+  #repo: https://github.com/hossainemruz/toha
+  summary: ネットワークについての情報を連携していたサーバーのバッチがサーバーの更改に伴って連携不可能になったため、PC資産管理イントラサイトシステム内に移植する案件に携わらせていただきました。
+  tags: ["PowerShell","pester","SQL","oracleDB","bat","VBS"]
+
+- name: システム管理者業務の自動化・省力化ツールの開発
+  #logo: /images/sections/projects/tensorflow.png
+  role: 設計,開発,テスト,運用,保守
+  timeline: "Jun 2018 - Present"
+  #repo: https://github.com/tensorflow/tensorflow
+  #url: ""
+  summary: 閑散期や手がい空いた時、自分が不便に感じていることやチームに貢献できそうな事があれば積極的に業務軽量化の為のツールを作成していました。
+  tags: ["VBA","PowerShell","Java","Struts1.x","SQL","Access","PowerQuery","bat","VBS","自動化"]

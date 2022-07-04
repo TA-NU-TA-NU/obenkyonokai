@@ -1,0 +1,51 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Software Engineer / Infrastructure Engineer
+# your company information
+company:
+  name: 某大手SES企業
+
+# your resume. this file path should be relative to you "static" directory
+#resume: "files/resume.pdf"
+
+# a summary about you
+summary: '初めてIT業界に入りエンジニアとしてのキャリアを踏み出しました。システム管理者業務の自動化・省力化やJava製社内イントラの保守運用開発、バッチプログラムのPowerShell移植などを通して多くの経験を積みました。'
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/TA-NU-TA-NU"
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+softSkills:
+- name: Communication
+  percentage: 80
+  color: blue
+- name: Team Work
+  percentage: 75
+  color: yellow
+- name: Spontaneity
+  percentage: 85
+  color: pink
+- name: Flexibility
+  percentage: 90
+  color: green
+- name: Problem-Solving Ability
+  percentage: 90
+  color: sky
+- name: Toughness
+  percentage: 80
+  color: orange
+  

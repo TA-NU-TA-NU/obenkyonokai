@@ -1,0 +1,8 @@
+# Meta description for your site.  This will help the search engines to find your site.
+description: Portfolio and personal blog of Tack.
+
+customMenus:
+- name: Notes
+  url: https://example.jp/notes/
+  hideFromNavbar: true
+  showOnFooter: true

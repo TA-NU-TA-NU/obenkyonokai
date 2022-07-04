@@ -1,0 +1,24 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: PowerShell
+  logo: "/images/sections/skills/powershell.png"
+  summary: "最もよく使った言語ですので自信があります。perlバッチ移植案件ではPowerShellでLAN内トポロジーを組み立て探索する複雑なロジックの設計～運用デザインまで行いました。"
+
+- name: VBA
+  summary: "社内イントラサイトへの入力支援と証跡保管のため登録結果をスクレイピングするツールをVBAで作成し作業効率を8.3倍にしメンバーが他の業務に集中できるように貢献しました"
+
+
+- name: Java
+  logo: "/images/sections/skills/java.png"
+  summary: "Java製の社内イントラサイトの保守運用開発に携わりました。struts1系を使ったレガシーシステムでしたが簡単な調査や改修を行うスキルはあります。"

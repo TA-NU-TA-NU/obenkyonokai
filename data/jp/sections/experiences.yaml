@@ -1,0 +1,43 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: 某リゾートホテル
+    location: 千葉県
+    # company overview
+    overview: 1000室以上ある某有名ホテルにてベルボーイとして働きながら国内外のお客様を接客しておりました。
+  positions:
+  - designation: ホテルマン
+    start: July 2012
+    end: May 2018
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - 接客
+    - 設備不具合時の一次対応マニュアルの作成・配布
+
+- company:
+    name: 某大手SES企業
+    location: 東京都
+    overview: エンジニアとしてのキャリアをここから始めました。某メガバンク系企業のお客様先にてクライアントPCのシステム管理業務の自動化や社内イントラ保守運用開発などをやらせていただきました。
+  positions:
+  - designation: インフラ/ソフトウェアエンジニア
+    start: July 2018
+    end: Present
+    responsibilities:
+    - クライアントPCのキッティング
+    - サポートデスクからのエスカレーション対応
+    - クライアントPCの自動構築ツールの開発
+    - イントラネットへの情報登録・スクレイピングツールの開発
+    - 社内イントラ保守運用開発
+    - perl製バッチのPowerShellでのリプレースプロジェクトにて設計～運用デザイン
