@@ -14,10 +14,21 @@ languages:
 
 # Control TOC depth
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   tableOfContents:
     startLevel: 2
     endLevel: 6
     ordered: false
+
+# At least HTML and JSON are required for the main HTML content and
+# client-side JavaScript search
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
 
 # Enable global emoji support
 enableEmoji: true
@@ -33,11 +44,6 @@ params:
     main: /images/site/main-logo.png
     inverted: /images/site/inverted-logo.png
     favicon: /images/site/favicon.png
-
-  # GitHub repo of your site
-  #gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
-  # Default branch of your Git repo
-  #gitBranch: main
 
   # Configure the number of section title visible in the top navbar
   topNavbar:

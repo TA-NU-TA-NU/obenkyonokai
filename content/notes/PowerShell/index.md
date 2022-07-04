@@ -7,7 +7,6 @@ menu:
     identifier: notes-powershell
     parent: Powershell
     weight: 10
-mermaid: true
 ---
 
 <!-- Variable -->
@@ -18,13 +17,15 @@ mermaid: true
 ```powershell
 [string]$name="John"
 $name
-
 ```
+
 {{< /note >}}
 
 <!-- If -->
 {{< note title="If" >}}
+
 **if文のサンプル**
+
 ```powershell
 [boolean]$foo=$true
 if($foo){
@@ -33,4 +34,5 @@ if($foo){
   write-host "this is false!"
 }
 ```
+
 {{< /note >}}
