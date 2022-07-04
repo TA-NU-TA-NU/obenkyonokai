@@ -9,7 +9,7 @@ menu:
     weight: 10
 ---
 
-<!-- 変数 -->
+<!-- Variable -->
 {{< note title="Variable" >}}
 
 **変数宣言の仕方**
@@ -21,7 +21,7 @@ $name
 ```
 {{< /note >}}
 
-<!-- if -->
+<!-- If -->
 {{< note title="If" >}}
 **if文のサンプル**
 ```powershell
