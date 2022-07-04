@@ -4,8 +4,8 @@ weight: 210
 menu:
   notes:
     name: Variables
-    identifier: notes-powershell-variables
-    parent: notes-powershell
+    identifier: notes-powershell
+    parent: Powershell
     weight: 10
 ---
 
