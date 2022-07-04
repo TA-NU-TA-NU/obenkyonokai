@@ -12,7 +12,7 @@ menu:
 <!-- Variable -->
 {{< note title="Variable" >}}
 
-**変数宣言の仕方!**
+**変数宣言の仕方**
 
 ```powershell
 [string]$name="John"
