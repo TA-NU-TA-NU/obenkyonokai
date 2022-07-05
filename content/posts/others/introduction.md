@@ -1,11 +1,12 @@
 ---
-title: "hugoで自サイトを構築してみた！"
-date: 2020-07-04
-description: hugoで自サイトを構築してみた！
+title: "初投稿"
+date: 2020-07-04T08:06:25+09:00
+description: hugoで自サイトを構築したよ！
 menu:
   sidebar:
-    name: others
-    identifier: others-introduction
+    name: 初投稿
+    identifier: others-Introduction
+    parent: others
     weight: 10
 tags: ["hugo", "サイト構築"]
 categories: ["hugo"]
