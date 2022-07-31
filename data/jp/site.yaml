@@ -3,6 +3,8 @@ description: Portfolio and personal blog of Tack.
 
 customMenus:
 - name: Notes
-  url: https://example.jp/notes/
+  url: /notes
   hideFromNavbar: true
   showOnFooter: true
+
+disclaimer: 当サイトについて、正確性や安全性を保証するものではありません。当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください.

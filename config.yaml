@@ -1,6 +1,6 @@
-baseURL: https://hugo-toha.github.io
+baseURL: "https://obenkyonokai.com/"
 
-languageCode: jp
+languageCode: ja
 defaultContentLanguage: jp
 title: "おべんきょのかい"
 theme: "toha"
@@ -14,21 +14,10 @@ languages:
 
 # Control TOC depth
 markup:
-  goldmark:
-    renderer:
-      unsafe: true
   tableOfContents:
-    startLevel: 2
-    endLevel: 6
-    ordered: false
-
-# At least HTML and JSON are required for the main HTML content and
-# client-side JavaScript search
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
+    startLevel: 2 
+    endLevel: 6 
+    ordered: true
 
 # Enable global emoji support
 enableEmoji: true
@@ -42,17 +31,17 @@ params:
   # transparent navbar and the main logo will be used in the non-transparent navbar.
   logo:
     main: /images/site/main-logo.png
-    inverted: /images/site/inverted-logo.png
+    inverted: /images/site/wh_157317.png
     favicon: /images/site/favicon.png
 
   # Configure the number of section title visible in the top navbar
   topNavbar:
-    maxVisibleSections: 5
+    maxVisibleSections: 6
 
   # Enable dark theme
   darkMode:
-    provider: darkreader
     enable: true
+    provider: darkreader
     default: system
 
   # Configure various features of this theme
@@ -167,13 +156,22 @@ params:
     credentials:
       enable: true
 
+    # Show/hide disclaimer notice in the footer. Default is "false".
+    disclaimer:
+      enable: true
+
     # Show/hide newsletter section in the footer. Default is "true".
     # Currently, it supports "mailchimp".
     newsletter:
       enable: false
       provider: mailchimp
-      mailchimpURL: https://github.us1.list-manage.com/subscribe/post?u=19de52a4603135aae97163fd8&amp;id=094a24c76e
+      mailchimpURL: 
 
-    # Show/hide disclaimer notice in the footer. Default is "false".
-    disclaimer:
-      enable: false
+  # At least HTML and JSON are required for the main HTML content and
+  # client-side JavaScript search
+  outputs:
+    home:
+      - HTML
+      - RSS
+      - JSON
+

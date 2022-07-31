@@ -1,18 +1,18 @@
 ---
-title: "hugoで自サイト構築導入編"
-date: 2020-07-05T03:51:25+09:00
-description: hugoで自サイト構築導入編
+title: "hugoで自サイト構築-導入編"
+date: 2022-07-05T03:51:25+09:00
+description: hugoで自サイト構築-導入編
 menu:
   sidebar:
-    name: hugoで自サイト構築導入編
+    name: hugoで自サイト構築-導入編
     identifier: hugo-aboutHugo
     parent: hugo
-    weight: 10
+    weight: 200
 tags: ["hugo", "サイト構築"]
 categories: ["hugo"]
 ---
 
-### Hugoとは
+## Hugoとは
 HugoとはGo言語で書かれた早くてモダンな静的サイトジェネレーターだそうで、簡単なwebサイトを手軽に構築できることから最近よく耳にするかと思います。  
 <br>
 Hugoはテンプレートに沿って設定や任意のファイルを加えてあげるだけで目的に合わせて基本的な機能を持ったWebサイトを構築できます。  
@@ -25,7 +25,7 @@ Hugoはテンプレートに沿って設定や任意のファイルを加えて�
 このテンプレートにも目的に合わせて様々なものがありどれも素敵ですね。  
 <br>
 
-### Tohaとは  
+## Tohaとは  
 
 で、今回は自分のアウトプットとポートフォリオの両方を叶えてくれるテンプレートを探しTohaというテンプレートにたどり着きました。  
 
@@ -34,18 +34,50 @@ Hugoはテンプレートに沿って設定や任意のファイルを加えて�
 [Tohaのサンプル](https://toha-guides.netlify.app/)  
 <br>  
 
-### 自分の環境について  
+## 自分の環境について  
 まず自分の環境についてですが、  
 Windows10 HomeEditionにWSL2でUbuntu 20.04.3 LTSを展開しています。  
 今回はそのUbuntu上で作業しています。  
 <br>
 
-#### install  
-以下でインストールします。  
+## install  
+以下の様にインストールします。    
+
+自分はUbuntuを利用していますので以下を実行して、マシンタイプを確認して…
+```console
+sudo uname -m
+```  
+
+このリンク先で最新版のURLを確認します。  
+
+[https://github.com/gohugoio/hugo/releases](https://github.com/gohugoio/hugo/releases)  
+  
+※2022/7/31 時点ではv0.101.0がlatestでした  
+  
+Assets にある対応したものを参照してwgetでダウンロードします。  
+
+```console
+wget https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_0.101.0_Linux-64bit.deb
+```  
+
+
+以下で解凍を実行  
+
+```console
+sudo dpkg -i hugo_0.101.0_Linux-64bit.deb
+```  
+  
+
+{{< alert type="danger" >}} 以下apt-getで取得できるものは古いversionなのでバージョンを上げてやらないとうまく動かない箇所が出るので注意が必要です。 <br>
 
 ```console
 sudo apt-get install hugo
 ```
+  
+自分の場合は、記事の日付表示が ":date_full" となっていて調べてみたら古いバージョンを取得していたからだと気づきました…。 
+
+{{< /alert >}}
+  
 
 インストールの確認については以下
 
@@ -55,8 +87,29 @@ hugo version
 
 v0.68.0以上であればTohaは適用可能だそうです  
 <br>  
+  
+## Version Up  
+バージョンアップが必要な場合は以下のような操作になります。 
+install時の操作と基本的には同じですがwgetするものを  
 
-#### Hugoサイトのスケルトンの作成
+**hugo_extend_XXX...**  
+
+となっているものにしましょう  
+  
+よって自分の場合は  
+```console
+wget https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_extended_0.101.0_Linux-64bit.deb
+```
+  
+
+以下で解凍を実行  
+```console
+sudo dpkg -i hugo_extended_0.101.0_Linux-64bit.deb
+```   
+となります。
+  
+
+## Hugoサイトのスケルトンの作成
 サイトを作成したいディレクトリで以下のコマンドを実行します  
 ```console
 hugo new site ./ -f=yaml --force
@@ -69,7 +122,7 @@ hugo new site ./ -f=yaml --force
 そして、`--force`とすることで対象ディレクトリが存在しなくても生成させることができます  
 <br>  
 
-#### gitのイニシャライズ  
+## gitのイニシャライズ  
 
 ```console
 git init
@@ -77,7 +130,7 @@ git init
 <br>  
 
 
-#### Tohaテーマの導入  
+## Tohaテーマの導入  
 
 以下のコマンドで自分のレポジトリーのthemes/tohaにサブモジュールとして導入します。  
 
@@ -90,7 +143,7 @@ tohaテンプレートの元のリポジトリの最新の更新を自分のサ�
 <br>  
 
       
-#### お試し実行  
+## お試し実行  
   
 これだけで基本の部分は導入で来ているのでローカルで動作を確認できるはずです。  
   
@@ -105,6 +158,6 @@ hugo server -t toha -w
   
 ひとしきり確認し終えたらCtrl＋Cしておきましょう。  
   
-### サイトの設定
+## サイトの設定
 この後は、Tohaテーマにそって設定等をしていきます。  
 一先ず長くなったのでここまで…  
