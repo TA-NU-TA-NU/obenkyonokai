@@ -1,10 +1,10 @@
 # Meta description for your site.  This will help the search engines to find your site.
-description: Portfolio and personal blog of Tack.
+description: Portfolio and personal blog of Tack.-Tackのポートフォリオ兼技術ブログ的サイトです!
 
 customMenus:
-- name: Notes
-  url: /notes
-  hideFromNavbar: true
+- name: Mygit
+  url: https://github.com/TA-NU-TA-NU
+  hideFromNavbar: false
   showOnFooter: true
 
 disclaimer: 当サイトについて、正確性や安全性を保証するものではありません。当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください.

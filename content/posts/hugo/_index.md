@@ -4,5 +4,5 @@ menu:
   sidebar:
     name: Hugo
     identifier: hugo
-    weight: 300
+    weight: 10
 ---

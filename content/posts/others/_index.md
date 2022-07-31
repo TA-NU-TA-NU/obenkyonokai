@@ -4,5 +4,5 @@ menu:
   sidebar:
     name: Others
     identifier: others
-    weight: 300
+    weight: 99
 ---

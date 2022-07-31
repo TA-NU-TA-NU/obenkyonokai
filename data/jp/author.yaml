@@ -1,6 +1,6 @@
 # some information about you
 nickname: "Tack"
-image: "images/author/tack.png"
+image: "/images/author/tack.png"
 
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "Hi, I am"
@@ -13,5 +13,6 @@ greeting: "Hi, I am"
 # some summary about what you do
 summary:
   - エンジニアをしてます!
+  - このサイトは自分のポートフォリオ兼技術ブログとなっております！
   - 興味の向くままにおべんきょしてます！
   - マイペース更新ですが宜しくお願い致します！

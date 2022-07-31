@@ -16,14 +16,14 @@ experiences:
     # company overview
     overview: 1000室以上ある某有名ホテルにてベルボーイとして働きながら国内外のお客様を接客しておりました。
   positions:
-  - designation: ホテルマン
+  - designation: ホテルマン/ベルボーイ
     start: July 2012
     end: May 2018
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - 接客
+    - フロアでの接客
     - 設備不具合時の一次対応マニュアルの作成・配布
 
 - company:
@@ -33,11 +33,11 @@ experiences:
   positions:
   - designation: インフラ/ソフトウェアエンジニア
     start: July 2018
-    end: Present
+    #end: Present
     responsibilities:
     - クライアントPCのキッティング
     - サポートデスクからのエスカレーション対応
     - クライアントPCの自動構築ツールの開発
-    - イントラネットへの情報登録・スクレイピングツールの開発
-    - 社内イントラ保守運用開発
+    - 社内イントラサイトへの自動情報登録・スクレイピングツールの開発
+    - 社内イントラサイトの保守運用開発
     - perl製バッチのPowerShellでのリプレースプロジェクトにて設計～運用デザイン
