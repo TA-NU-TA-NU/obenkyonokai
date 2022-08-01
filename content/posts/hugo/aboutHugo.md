@@ -88,8 +88,8 @@ hugo version
 v0.68.0以上であればTohaは適用可能だそうです  
 <br>  
   
-## Version Up  
-バージョンアップが必要な場合は以下のような操作になります。 
+## Extend Version   
+Extend Versionが必要な場合は以下のような操作になります。 
 install時の操作と基本的には同じですがwgetするものを  
 
 **hugo_extend_XXX...**  
