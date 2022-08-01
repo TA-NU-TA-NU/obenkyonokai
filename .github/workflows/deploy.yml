@@ -17,7 +17,7 @@ jobs:
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
-        hugo-version: '0.101.0'
+        hugo-version: '0.101.0' #hugoのバージョンを記述
         extended: true
 
     - name: Build
@@ -27,11 +27,11 @@ jobs:
       run: ls public/
 
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@2.0.0   # FTPを使ってサーバーにDeployするアクションを実行
-      env:                                        
-        FTP_SERVER: ${{ secrets.FTP_SERVER }}     # FTPサーバーのURLを設定
-        FTP_USERNAME: ${{ secrets.FTP_USERNAME }} # FTPのユーザー名を設定
-        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }} # FTPのパスワードを設定
-        LOCAL_DIR: public                           # どのディレクトリのデータをアップロードするか
-        REMOTE_DIR: /obenkyonokai.com      # ロリポップ！FTPサーバのどのディレクトリにアップロードするか
-        ARGS: --delete
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0   # FTPを使ってサーバーにDeployするアクションを実行
+      with:                                        
+        server: ${{ secrets.FTP_SERVER }}     # FTPサーバーのURLを設定
+        username: ${{ secrets.FTP_USERNAME }} # FTPのユーザー名を設定
+        password: ${{ secrets.FTP_PASSWORD }} # FTPのパスワードを設定
+        local-dir: public                           # どのディレクトリのデータをアップロードするか
+        server-dir: /obenkyonokai.com      # ロリポップ！FTPサーバのどのディレクトリにアップロードするか
+                
