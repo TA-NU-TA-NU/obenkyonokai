@@ -27,11 +27,11 @@ jobs:
       run: ls public/
 
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0   # FTPを使ってサーバーにDeployするアクションを実行
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0   # FTPを使ってサーバーにDeployするアクションを実行
       with:                                        
         server: ${{ secrets.FTP_SERVER }}     # FTPサーバーのURLを設定
         username: ${{ secrets.FTP_USERNAME }} # FTPのユーザー名を設定
         password: ${{ secrets.FTP_PASSWORD }} # FTPのパスワードを設定
         local-dir: public                           # どのディレクトリのデータをアップロードするか
         server-dir: /obenkyonokai.com      # ロリポップ！FTPサーバのどのディレクトリにアップロードするか
-                
+
