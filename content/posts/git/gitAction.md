@@ -143,7 +143,9 @@ FTPを使ってサーバーにDeployするアクションだそうです。
 参考：[https://github.com/SamKirkland/FTP-Deploy-Action](https://github.com/SamKirkland/FTP-Deploy-Action)  
 
 当初は2.0.0を利用していましたが、どうもこっちの方が実効速度が速いそうです。  
-直帰のworkflowの実行時間が 9m 2s だったものが 3m 38s になってました。  
+直近のworkflowの実行時間が 9m 2s だったものが 3m 38s になってました。  
+二回目は 8m 1s...汗
+
 ※ちゃんとしたはかり方ではないけど…  
 
 #### ${{ secrets.XXXXX }} 部分の定義
