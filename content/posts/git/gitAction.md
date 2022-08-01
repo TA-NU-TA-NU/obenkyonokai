@@ -73,13 +73,13 @@ jobs:
       run: ls public/
 
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0   # FTPを使ってサーバーにDeployするアクションを実行
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0   # FTPを使ってサーバーにDeployするアクションを実行
       with:                                        
         server: ${{ secrets.FTP_SERVER }}     # FTPサーバーのURLを設定
         username: ${{ secrets.FTP_USERNAME }} # FTPのユーザー名を設定
         password: ${{ secrets.FTP_PASSWORD }} # FTPのパスワードを設定
-        local-dir: public                           # どのディレクトリのデータをアップロードするか
-        server-dir: /obenkyonokai.com      # ロリポップ！FTPサーバのどのディレクトリにアップロードするか
+        local-dir: public/                           # どのディレクトリのデータをアップロードするか
+        server-dir: /obenkyonokai.com/      # ロリポップ！FTPサーバのどのディレクトリにアップロードするか
 
 ```
   
@@ -137,10 +137,14 @@ extended version も利用したい場合は true としておきます
 run: は  コマンドの実行を指します。  
 `hugo --minify` は hugoサイトをビルドするコマンドです。 --minifyオプションは圧縮してビルドさせるためのもの。  
 
-#### uses: SamKirkland/FTP-Deploy-Action@4.3.0
+#### uses: SamKirkland/FTP-Deploy-Action@4.0.0
 FTPを使ってサーバーにDeployするアクションだそうです。
 
 参考：[https://github.com/SamKirkland/FTP-Deploy-Action](https://github.com/SamKirkland/FTP-Deploy-Action)  
+
+当初は2.0.0を利用していましたが、どうもこっちの方が実効速度が速いそうです。  
+直帰のworkflowの実行時間が 9m 2s だったものが 3m 38s になってました。  
+※ちゃんとしたはかり方ではないけど…  
 
 #### ${{ secrets.XXXXX }} 部分の定義
 接続情報は秘匿化したいのでsecretsを使って隠蔽します。
@@ -152,3 +156,6 @@ Settings -> Secrets -> New repository secret から
 - FTP_SERVER -> FTPサーバーのURLを設定
 - FTP_USERNAME -> FTPのユーザー名を設定
 - FTP_PASSWORD -> FTPのパスワードを設定
+
+## あとはデプロイ！
+出来上がったら実際にpushすればよきまる。
