@@ -1,8 +1,8 @@
 ---
-title: pl/pgsql
+title: plpgsql
 menu:
   sidebar:
-    name: pl/pgsql
-    identifier: pl/pgsql
+    name: plpgsql
+    identifier: plpgsql
     weight: 61
 ---
