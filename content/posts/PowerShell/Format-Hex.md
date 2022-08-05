@@ -8,7 +8,7 @@ menu:
     name: PowerShellと文字コード
     identifier: PowerShell-FormatHex
     parent: PowerShell
-    weight: 101
+    weight: 102
 tags: ["PowerShell"]
 categories: ["PowerShell"]
 ---
